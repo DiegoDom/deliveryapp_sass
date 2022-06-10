@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header contenedor">
+        <div class="header__logo">
+            <img src="build/img/logo.svg" alt="DeliveryApp">
+        </div>
+        <nav class="navegacion">
+            <a href="#" class="navegacion__link">Iniciar sesión</a>
+            <a href="#" class="navegacion__link">Crear cuenta</a>
+            <a href="#" class="navegacion__link navegacion__link--registrar">Registrar restaurante</a>
+        </nav>
+    </header>
+    <section class="contenedor formulario">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2 class="formulario__heading">Encuentra y ordena comida de tú restaurante favorito</h2>
+                <form class="formulario__buscar">
+                    <div class="formulario__campo">
+                        <label for="restaurante" class="formulario__label">Restaurante</label>
+                        <input type="text" name="restaurante" id="restaurante" class="formulario__input" placeholder="Busca tú restaurante favorito...">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="platillo" class="formulario__label">Platillo</label>
+                        <input type="text" name="platillo" id="platillo" class="formulario__input" placeholder="Busca tú platillo favorito...">
+                    </div>
+                    <input type="submit" value="Buscar" class="formulario__submit">
+                </form>
+            </div>
+            <div class="formulario__imagen-contenedor">
+                <img class="formulario__imagen" src="build/img/dibujo_repartidor.svg" alt="Deliver Man">
+            </div>
+        </div>
+    </section>
+    <section class="pasos">
+        <img class="pasos__wave" src="build/img/wave.svg" alt="Pasos WAVE">
+        <div class="pasos__contenido">
+            <h2 class="pasos__heading">¿Cómo funciona? <span class="pasos__heading--desc">tan fácil como 1, 2 y 3</span>
+            </h2>
+            <div class="pasos__grid contenedor">
+                <div class="pasos__paso">
+                    <picture>
+                        <source srcset="build/img/paso_1.avif" type="image/avif" />
+                        <source srcset="build/img/paso_1.webp" type="image/webp" />
+                        <img class="pasos__imagen" loading="lazy" decoding="async" src="build/img/paso_1.jpg" alt="Paso 1" />
+                    </picture>
+                </div>
+                <div class="pasos__paso">
+                    <picture>
+                        <source srcset="build/img/paso_2.avif" type="image/avif" />
+                        <source srcset="build/img/paso_2.webp" type="image/webp" />
+                        <img class="pasos__imagen" loading="lazy" decoding="async" src="build/img/paso_2.jpg" alt="Paso 2" />
+                    </picture>
+                </div>
+                <div class="pasos__paso">
+                    <picture>
+                        <source srcset="build/img/paso_3.avif" type="image/avif" />
+                        <source srcset="build/img/paso_3.webp" type="image/webp" />
+                        <img class="pasos__imagen" loading="lazy" decoding="async" src="build/img/paso_3.jpg" alt="Paso 3" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor testimoniales">
+        <h2 class="testimoniales__heading">Testimoniales</h2>
+        <div class="testimoniales__grid">
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial1.avif" type="image/avif" />
+                            <source srcset="build/img/testimonial1.webp" type="image/webp" />
+                            <img loading="lazy" decoding="async" src="build/img/testimonial1.jpg" alt="Testimonial1" />
+                        </picture>
+                    </div>
+                    <div class="testimonial__informacion">
+                        <p class="testimonial__autor">Juan Perez</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif" />
+                            <source srcset="build/img/estrellas.webp" type="image/webp" />
+                            <img class="testimonial__calificacion" loading="lazy" decoding="async" src="build/img/estrellas.png" alt="Calificacion" />
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar con tarjeta o efectivo según me convenga.
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial5.avif" type="image/avif" />
+                            <source srcset="build/img/testimonial5.webp" type="image/webp" />
+                            <img loading="lazy" decoding="async" src="build/img/testimonial5.jpg" alt="Testimonial5" />
+                        </picture>
+                    </div>
+                    <div class="testimonial__informacion">
+                        <p class="testimonial__autor">Itzel Cruz</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif" />
+                            <source srcset="build/img/estrellas.webp" type="image/webp" />
+                            <img class="testimonial__calificacion" loading="lazy" decoding="async" src="build/img/estrellas.png" alt="Calificacion" />
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, sit necessitatibus. Hic voluptatum molestias deleniti quis quod, unde magnam, iste quibusdam perspiciatis vero, nulla distinctio optio reiciendis. Ad, quo amet!
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial4.avif" type="image/avif" />
+                            <source srcset="build/img/testimonial4.webp" type="image/webp" />
+                            <img loading="lazy" decoding="async" src="build/img/testimonial4.jpg" alt="Testimonial4" />
+                        </picture>
+                    </div>
+                    <div class="testimonial__informacion">
+                        <p class="testimonial__autor">Rocio Rodriguez</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif" />
+                            <source srcset="build/img/estrellas.webp" type="image/webp" />
+                            <img class="testimonial__calificacion" loading="lazy" decoding="async" src="build/img/estrellas.png" alt="Calificacion" />
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nemo libero voluptatum id, modi quia ipsum eveniet praesentium mollitia, cumque molestiae repellendus aperiam alias maxime dolor maiores ea sit! Sint.
+                </blockquote>
+            </div>
+
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial2.avif" type="image/avif" />
+                            <source srcset="build/img/testimonial2.webp" type="image/webp" />
+                            <img loading="lazy" decoding="async" src="build/img/testimonial2.jpg" alt="Testimonial2" />
+                        </picture>
+                    </div>
+                    <div class="testimonial__informacion">
+                        <p class="testimonial__autor">Cynthia V.</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif" />
+                            <source srcset="build/img/estrellas.webp" type="image/webp" />
+                            <img class="testimonial__calificacion" loading="lazy" decoding="async" src="build/img/estrellas.png" alt="Calificacion" />
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa neque autem eum minus modi officiis quas velit nam veniam necessitatibus laboriosam debitis, dolorem sit, hic vitae deserunt quis iusto.
+                </blockquote>
+            </div>
+
+            <div class="testimonial">
+                <header class="testimonial__header">
+                    <div class="testimonial__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial3.avif" type="image/avif" />
+                            <source srcset="build/img/testimonial3.webp" type="image/webp" />
+                            <img loading="lazy" decoding="async" src="build/img/testimonial3.jpg" alt="Testimonial3" />
+                        </picture>
+                    </div>
+                    <div class="testimonial__informacion">
+                        <p class="testimonial__autor">Jose Hernández</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif" />
+                            <source srcset="build/img/estrellas.webp" type="image/webp" />
+                            <img class="testimonial__calificacion" loading="lazy" decoding="async" src="build/img/estrellas.png" alt="Calificacion" />
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonial__texto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis velit, odit neque pariatur eligendi quo incidunt cupiditate iusto harum asperiores praesentium at quis corporis totam, unde voluptatem quia. Vero, doloribus.
+                </blockquote>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
